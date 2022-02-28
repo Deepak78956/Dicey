@@ -20,3 +20,5 @@ At first any one of the player will get a turn randomly and it can click on roll
 ![Dicey_start](https://user-images.githubusercontent.com/45622968/155928347-9836d6cc-1e48-4547-87e3-92d364cc277f.png)
 
 ![Dicey_playing](https://user-images.githubusercontent.com/45622968/155928371-3a134082-eb1a-489e-ad94-491b40e2f6bf.png)
+
+![winner_dicey](https://user-images.githubusercontent.com/45622968/155935568-949a7c49-452a-4976-8b21-f35da62facfe.png)
