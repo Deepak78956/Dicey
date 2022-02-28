@@ -37,7 +37,7 @@ if (turn == 1) {
 rollDice.addEventListener('click', function () {
   currentScore = document.querySelector(`#current--${turn}`);
   let num = Math.trunc(Math.random() * 6) + 1;
-  dice.src = `\\images\\dice-${num}.png`;
+  dice.src = `.\\images\\dice-${num}.png`;
   if (num != 1) {
     temp = Number(currentScore.textContent);
     currentScore.textContent = temp + num;
