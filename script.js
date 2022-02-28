@@ -4,6 +4,7 @@ let currentScore;
 let temp;
 let currentPlayerTotal;
 let turn = Math.trunc(Math.random() * 2);
+let maxScore = Number(prompt('Please set maximum score'));
 const p1TotalScore = document.querySelector('#score--0');
 const p2TotalScore = document.querySelector('#score--1');
 p1TotalScore.textContent = '0';
@@ -37,7 +38,7 @@ if (turn == 1) {
 rollDice.addEventListener('click', function () {
   currentScore = document.querySelector(`#current--${turn}`);
   let num = Math.trunc(Math.random() * 6) + 1;
-  dice.src = `\\images\\dice-${num}.png`;
+  dice.src = `.\\images\\dice-${num}.png`;
   if (num != 1) {
     temp = Number(currentScore.textContent);
     currentScore.textContent = temp + num;
@@ -52,6 +53,10 @@ hold.addEventListener('click', function () {
   temp = Number(currentPlayerTotal.textContent);
   currentPlayerTotal.textContent = temp + Number(currentScore.textContent);
   currentScore.textContent = 0;
+  if (Number(currentPlayerTotal.textContent) >= maxScore) {
+    document.querySelector(`.player--${turn}`).classList.add('player--winner');
+    currentPlayerTotal.textContent = `${currentPlayerTotal.textContent} 🎉`;
+  }
   changeTurn(turn == 0 ? 1 : 0);
 });
 
@@ -67,4 +72,6 @@ newGame.addEventListener('click', function () {
   p2TotalScore.textContent = '0';
   document.querySelector(`#current--0`).textContent = '0';
   document.querySelector(`#current--1`).textContent = '0';
+  document.querySelector(`.player--0`).classList.remove('player--winner');
+  document.querySelector(`.player--1`).classList.remove('player--winner');
 });
