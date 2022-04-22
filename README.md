@@ -7,6 +7,10 @@ It is basically a Dice game bulit by keeping three goals in mind:
 
 It uses ES6 JavaScript and its concepts like event handling, functions, loops and DOM manipulation.
 
+#Live Demo
+
+**You Can See The `Dicey` Live On:** [Here](https://deepak78956.github.io/Dicey/)
+
 # Dicey Flow chart
 
 ![Dicey-flowchart](https://user-images.githubusercontent.com/45622968/155927903-5b906631-ea33-4ed0-b995-7c32458d845b.png)
